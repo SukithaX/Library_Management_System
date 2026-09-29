@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="499.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login">
+<AnchorPane prefHeight="499.0" prefWidth="664.0" style="-fx-background-color: #0F3040;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login">
    <children>
-      <Button layoutX="188.0" layoutY="409.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="94.0" text="LOGIN">
+      <Button layoutX="204.0" layoutY="409.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="94.0" style="-fx-background-color: #253C6D;" text="LOGIN" textFill="WHITE">
          <font>
             <Font name="Google Sans 17pt Bold" size="18.0" />
          </font>
@@ -26,14 +26,14 @@
             <Font name="Google Sans 17pt SemiBold" size="19.0" />
          </font>
       </Label>
-      <TextField layoutX="266.0" layoutY="258.0" prefHeight="26.0" prefWidth="264.0" />
-      <PasswordField layoutX="266.0" layoutY="322.0" prefHeight="26.0" prefWidth="264.0" />
+      <TextField layoutX="266.0" layoutY="258.0" prefHeight="26.0" prefWidth="264.0" style="-fx-background-color: #091540;" />
+      <PasswordField layoutX="266.0" layoutY="322.0" prefHeight="26.0" prefWidth="264.0" style="-fx-background-color: #091540;" />
       <ImageView fitHeight="320.0" fitWidth="296.0" layoutX="168.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../../Users/sukhi/Downloads/Teal%20Illustrated%20Book%20Club%20Logo.png" />
          </image>
       </ImageView>
-      <Button layoutX="332.0" layoutY="409.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="94.0" text="REGISTER">
+      <Button layoutX="370.0" layoutY="409.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="94.0" style="-fx-background-color: #800020;" text="CLEAR" textFill="WHITE">
          <font>
             <Font name="Google Sans 17pt Bold" size="18.0" />
          </font>
