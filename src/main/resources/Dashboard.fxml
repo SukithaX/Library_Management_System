@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="591.0" prefWidth="885.0" style="-fx-background-color: #091540;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard">
    <children>
-      <ImageView fitHeight="603.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="600.0" fitWidth="476.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../../Users/sukhi/Downloads/WELCOME.png" />
          </image>
@@ -21,7 +20,7 @@
       </ImageView>
       <Button layoutX="545.0" layoutY="156.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="287.0" text="VIEW ADDED BOOKS" textFill="WHITE">
          <font>
-            <Font name="Google Sans SemiBold" size="25.0" />
+            <Font name="Google Sans Bold" size="25.0" />
          </font>
       </Button>
       <Button layoutX="545.0" layoutY="241.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="287.0" text="VIEW MEMBERS" textFill="WHITE">

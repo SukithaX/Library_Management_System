@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="669.0" prefWidth="978.0" style="-fx-background-color: #091540;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewBooks">
+   <children>
+      <TableView id="TableView" editable="true" layoutX="33.0" layoutY="179.0" prefHeight="461.0" prefWidth="917.0">
+        <columns>
+            <TableColumn prefWidth="103.0" text="ISBN" />
+          <TableColumn prefWidth="153.0" text="Title" />
+          <TableColumn prefWidth="181.0" text="Author" />
+            <TableColumn prefWidth="169.0" text="Category" />
+            <TableColumn prefWidth="186.0" text="Added Date" />
+            <TableColumn prefWidth="118.0" text="QTY" />
+        </columns>
+      </TableView>
+      <Button id="AddBook" layoutX="752.0" layoutY="85.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #38b000;" text="ADD BOOKS" textFill="WHITE">
+         <font>
+            <Font name="Google Sans Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="342.0" layoutY="72.0" prefHeight="73.0" prefWidth="295.0" style="-fx-alignment: Center;" text="Books We Have" textFill="WHITE">
+         <font>
+            <Font name="Google Sans SemiBold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="105.0" fitWidth="176.0" layoutX="51.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/sukhi/Downloads/Teal%20Illustrated%20Book%20Club%20Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
