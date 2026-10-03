@@ -37,14 +37,14 @@
             <Font name="Google Sans Bold" size="17.0" />
          </font>
       </Label>
-      <ChoiceBox layoutX="192.0" layoutY="357.0" prefWidth="150.0" />
-      <Spinner layoutX="192.0" layoutY="406.0" />
+      <ChoiceBox layoutX="192.0" layoutY="357.0" prefHeight="25.0" prefWidth="167.0" />
+      <Spinner layoutX="192.0" layoutY="406.0" prefHeight="25.0" prefWidth="167.0" />
       <Label layoutX="51.0" layoutY="396.0" prefHeight="46.0" prefWidth="122.0" text="QTY" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="17.0" />
          </font>
       </Label>
-      <DatePicker layoutX="192.0" layoutY="459.0" />
+      <DatePicker layoutX="192.0" layoutY="459.0" prefHeight="25.0" prefWidth="167.0" />
       <Label layoutX="51.0" layoutY="449.0" prefHeight="46.0" prefWidth="122.0" text="Date" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="17.0" />
@@ -55,7 +55,7 @@
             <Font name="Google Sans Bold" size="25.0" />
          </font>
       </Label>
-      <Button layoutX="350.0" layoutY="542.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="139.0" style="-fx-background-color: #38b000;" text="ADD BOOK" textFill="WHITE">
+      <Button fx:id="AddBookbtn" layoutX="350.0" layoutY="542.0" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="46.0" prefWidth="139.0" style="-fx-background-color: #38b000;" text="ADD BOOK" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="17.0" />
          </font>

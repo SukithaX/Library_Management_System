@@ -18,27 +18,27 @@
             <Image url="@../../../../../../../Users/sukhi/Downloads/Teal%20Illustrated%20Book%20Club%20Logo.png" />
          </image>
       </ImageView>
-      <Button layoutX="545.0" layoutY="156.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="287.0" text="VIEW ADDED BOOKS" textFill="WHITE">
+      <Button fx:id="ViewBook" layoutX="545.0" layoutY="156.0" mnemonicParsing="false" onAction="#btnViewBookOnAction" prefHeight="73.0" prefWidth="287.0" style="-fx-background-color: #5390d9;" text="VIEW ADDED BOOKS" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="25.0" />
          </font>
       </Button>
-      <Button layoutX="545.0" layoutY="241.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="287.0" text="VIEW MEMBERS" textFill="WHITE">
+      <Button fx:id="ViewMember" layoutX="545.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnViewMemberOnAction" prefHeight="73.0" prefWidth="287.0" style="-fx-background-color: #5390d9;" text="VIEW MEMBERS" textFill="WHITE">
          <font>
             <Font name="Google Sans SemiBold" size="25.0" />
          </font>
       </Button>
-      <Button layoutX="545.0" layoutY="326.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="287.0" text="BORROWED BOOKS" textFill="WHITE">
+      <Button fx:id="BorrowedBooks" layoutX="545.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnOnActionBorrowedBooks" prefHeight="73.0" prefWidth="287.0" style="-fx-background-color: #5390d9;" text="BORROWED BOOKS" textFill="WHITE">
          <font>
             <Font name="Google Sans SemiBold" size="25.0" />
          </font>
       </Button>
-      <Button layoutX="545.0" layoutY="411.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="287.0" text="OVERDUE BOOKS" textFill="WHITE">
+      <Button fx:id="Overdue" layoutX="545.0" layoutY="411.0" mnemonicParsing="false" onAction="#OverdueOnAction" prefHeight="73.0" prefWidth="287.0" style="-fx-background-color: #5390d9;" text="OVERDUE BOOKS" textFill="WHITE">
          <font>
             <Font name="Google Sans SemiBold" size="25.0" />
          </font>
       </Button>
-      <Button layoutX="604.0" layoutY="515.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="169.0" style="-fx-background-color: #D62828;" text="LOGOUT" textFill="WHITE">
+      <Button fx:id="logout" layoutX="604.0" layoutY="515.0" mnemonicParsing="false" onAction="#onActionLogOut" prefHeight="48.0" prefWidth="169.0" style="-fx-background-color: #D62828;" text="LOGOUT" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
          <font>
             <Font name="Google Sans SemiBold" size="25.0" />
          </font>

@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="669.0" prefWidth="978.0" style="-fx-background-color: #091540;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewBooks">
    <children>
       <TableView id="TableView" editable="true" layoutX="33.0" layoutY="179.0" prefHeight="461.0" prefWidth="917.0">
@@ -22,7 +21,7 @@
             <TableColumn prefWidth="118.0" text="QTY" />
         </columns>
       </TableView>
-      <Button id="AddBook" layoutX="752.0" layoutY="85.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #38b000;" text="ADD BOOKS" textFill="WHITE">
+      <Button id="AddBook" fx:id="AddBooks" layoutX="752.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #38b000;" text="ADD BOOKS" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="16.0" />
          </font>
@@ -37,5 +36,10 @@
             <Image url="@../../../../../../../Users/sukhi/Downloads/Teal%20Illustrated%20Book%20Club%20Logo.png" />
          </image>
       </ImageView>
+      <Button fx:id="Dashboard" layoutX="752.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnDashOnAction" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #c32f27;" text="BACK TO MENU" textFill="WHITE">
+         <font>
+            <Font name="Google Sans Bold" size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
