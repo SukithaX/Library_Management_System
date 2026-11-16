@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="669.0" prefWidth="978.0" style="-fx-background-color: #091540;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewBooks">
+<AnchorPane prefHeight="669.0" prefWidth="978.0" style="-fx-background-color: #091540;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewBooks">
    <children>
-      <TableView id="TableView" editable="true" layoutX="33.0" layoutY="179.0" prefHeight="461.0" prefWidth="917.0">
+      <TableView id="TableView" fx:id="TblBooks" editable="true" layoutX="33.0" layoutY="179.0" prefHeight="461.0" prefWidth="917.0">
         <columns>
             <TableColumn prefWidth="103.0" text="ISBN" />
           <TableColumn prefWidth="153.0" text="Title" />
@@ -21,7 +21,7 @@
             <TableColumn prefWidth="118.0" text="QTY" />
         </columns>
       </TableView>
-      <Button id="AddBook" fx:id="AddBooks" layoutX="752.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #38b000;" text="ADD BOOKS" textFill="WHITE">
+      <Button id="controller.addbook.AddBook" fx:id="AddBooks" layoutX="752.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnAddBookOnAction" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #38b000;" text="ADD BOOKS" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="16.0" />
          </font>

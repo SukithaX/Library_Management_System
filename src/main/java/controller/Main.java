@@ -1,3 +1,5 @@
+package controller;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -12,7 +14,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage){
         try {
-            stage.setScene(new Scene(load(getClass().getResource("login.fxml"))));
+            stage.setScene(new Scene(load(getClass().getResource("GUI/login.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
