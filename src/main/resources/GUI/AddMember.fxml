@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="622.0" prefWidth="540.0" style="-fx-background-color: #091540;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddMember">
+<AnchorPane prefHeight="622.0" prefWidth="540.0" style="-fx-background-color: #091540;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddMember">
    <children>
       <Label layoutX="41.0" layoutY="178.0" prefHeight="29.0" prefWidth="138.0" text="Member ID" textFill="WHITE">
          <font>
@@ -28,21 +27,21 @@
             <Font name="Google Sans Bold" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="179.0" layoutY="180.0" prefHeight="25.0" prefWidth="323.0" />
-      <TextField layoutX="179.0" layoutY="231.0" prefHeight="25.0" prefWidth="323.0" />
-      <TextArea layoutX="179.0" layoutY="289.0" prefHeight="119.0" prefWidth="323.0" />
+      <TextField fx:id="txtMemberID" layoutX="179.0" layoutY="180.0" prefHeight="25.0" prefWidth="323.0" />
+      <TextField fx:id="txtFullName" layoutX="179.0" layoutY="231.0" prefHeight="25.0" prefWidth="323.0" />
+      <TextArea fx:id="txtAddress" layoutX="179.0" layoutY="289.0" prefHeight="119.0" prefWidth="323.0" />
       <Label layoutX="41.0" layoutY="428.0" prefHeight="29.0" prefWidth="138.0" text="Date Of Birth" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="17.0" />
          </font>
       </Label>
-      <DatePicker layoutX="179.0" layoutY="430.0" />
+      <DatePicker fx:id="txtDob" layoutX="179.0" layoutY="430.0" />
       <Label layoutX="41.0" layoutY="483.0" prefHeight="29.0" prefWidth="138.0" text="Joined Date" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="17.0" />
          </font>
       </Label>
-      <DatePicker layoutX="179.0" layoutY="485.0" />
+      <DatePicker fx:id="txtJoinD" layoutX="179.0" layoutY="485.0" />
       <Button fx:id="AddMemberbtn" layoutX="180.0" layoutY="542.0" mnemonicParsing="false" onAction="#AddMemberbtnOnAction" prefHeight="57.0" prefWidth="180.0" style="-fx-background-color: #38b000;" text="ADD MEMBER" textFill="WHITE">
          <font>
             <Font name="Google Sans Bold" size="16.0" />

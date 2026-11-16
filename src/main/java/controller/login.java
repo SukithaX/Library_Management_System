@@ -1,3 +1,5 @@
+package controller;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -9,8 +11,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
-import javax.naming.Name;
 
 public class login {
 
@@ -42,7 +42,7 @@ public class login {
         if (b){
             Stage stage = new Stage();
             try {
-                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Dashboard.fxml"))));
+                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("controller.Dashboard.fxml"))));
                 stage.show();
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -59,9 +59,9 @@ public class login {
 
     @FXML
     void initialize() {
-        assert LoginButton != null : "fx:id=\"LoginButton\" was not injected: check your FXML file 'login.fxml'.";
-        assert txtPassword != null : "fx:id=\"txtPassword\" was not injected: check your FXML file 'login.fxml'.";
-        assert txtUserName != null : "fx:id=\"txtUserName\" was not injected: check your FXML file 'login.fxml'.";
+        assert LoginButton != null : "fx:id=\"LoginButton\" was not injected: check your FXML file 'controller.login.fxml'.";
+        assert txtPassword != null : "fx:id=\"txtPassword\" was not injected: check your FXML file 'controller.login.fxml'.";
+        assert txtUserName != null : "fx:id=\"txtUserName\" was not injected: check your FXML file 'controller.login.fxml'.";
 
     }
 

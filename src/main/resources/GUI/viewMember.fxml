@@ -10,12 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="669.0" prefWidth="978.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewMember">
+<AnchorPane prefHeight="669.0" prefWidth="978.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.viewMember">
    <children>
       <AnchorPane layoutX="-2.0" prefHeight="676.0" prefWidth="983.0" style="-fx-background-color: #091540;">
          <children>
-            <TableView id="TableView" editable="true" layoutX="33.0" layoutY="179.0" prefHeight="461.0" prefWidth="894.0">
+            <TableView id="TableView" fx:id="tblMember" editable="true" layoutX="33.0" layoutY="179.0" prefHeight="461.0" prefWidth="894.0">
                <columns>
                   <TableColumn prefWidth="135.0" text="Member ID" />
                   <TableColumn prefWidth="199.0" text="Full Name" />
@@ -24,7 +23,7 @@
                   <TableColumn minWidth="0.0" prefWidth="204.0" text="Joined Date" />
                </columns>
             </TableView>
-            <Button id="AddBook" fx:id="AddMember" layoutX="47.0" layoutY="91.0" mnemonicParsing="false" onAction="#btnAddMemberOnAction" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #38b000;" text="ADD MEMBER" textFill="WHITE">
+            <Button id="controller.addbook.AddBook" fx:id="AddMember" layoutX="47.0" layoutY="91.0" mnemonicParsing="false" onAction="#btnAddMemberOnAction" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #38b000;" text="ADD MEMBER" textFill="WHITE">
                <font>
                   <Font name="Google Sans Bold" size="16.0" />
                </font>
@@ -44,13 +43,13 @@
                   <Font name="Google Sans Bold" size="16.0" />
                </font>
             </Button>
-            <Button id="AddBook" fx:id="RemoveMember" layoutX="751.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnRemoveMemberOnAction" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #c32f27;" text="REMOVE MEMBER" textFill="WHITE">
+            <Button id="controller.addbook.AddBook" fx:id="RemoveMember" layoutX="751.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnRemoveMemberOnAction" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #c32f27;" text="REMOVE MEMBER" textFill="WHITE">
                <font>
                   <Font name="Google Sans Bold" size="16.0" />
                </font>
             </Button>
             <TextField layoutX="623.0" layoutY="114.0" prefHeight="38.0" prefWidth="228.0" promptText="search" />
-            <Button id="AddBook" fx:id="AddMember1" layoutX="861.0" layoutY="115.0" mnemonicParsing="false" onAction="#btnAddMemberOnAction" prefHeight="32.0" prefWidth="61.0" style="-fx-background-color: #38b000;" text="Search" textFill="WHITE">
+            <Button id="controller.addbook.AddBook" fx:id="AddMember1" layoutX="861.0" layoutY="115.0" mnemonicParsing="false" onAction="#btnAddMemberOnAction" prefHeight="32.0" prefWidth="61.0" style="-fx-background-color: #38b000;" text="Search" textFill="WHITE">
                <font>
                   <Font name="Google Sans Bold" size="11.0" />
                </font>
